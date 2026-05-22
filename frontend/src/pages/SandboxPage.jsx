@@ -407,7 +407,7 @@ function SandboxPage() {
             key={sandpackKey}
             files={initialFiles}
             theme="dark"
-            template="static"
+            template="vanilla"
             customSetup={{ dependencies: sandpackDependencies }}
             options={{
               activeFile: activeFile.startsWith("/") ? activeFile : `/${activeFile}`,
