@@ -93,14 +93,6 @@ This project was built using Claude as a primary development accelerator. Here's
 | Socket room isolation | Designed per-project rooms so 100 users on different projects never interfere |
 | `initialFiles` vs live `files` | Understood that passing live React state as Sandpack `files` prop caused editor resets on every keystroke |
 
-### Prompt Engineering Approach
-
-- Gave Claude the full project spec upfront with phase-by-phase breakdown
-- Confirmed each step before proceeding — prevented cascading errors
-- When bugs appeared, pasted exact error messages + relevant code for targeted fixes
-- Never accepted generated code blindly — reviewed every architectural decision
-
----
 
 ## ⚖️ Technical Trade-offs
 
