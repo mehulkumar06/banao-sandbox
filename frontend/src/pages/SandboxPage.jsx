@@ -63,6 +63,7 @@ function getLanguage(filename) {
 function dbFilesToSandpack(files) {
   const result = {};
   files.forEach((f) => {
+    if (f.name === "package.json") return; // Sandpack manages this internally
     const key = f.name.startsWith("/") ? f.name : `/${f.name}`;
     result[key] = { code: f.content };
   });
