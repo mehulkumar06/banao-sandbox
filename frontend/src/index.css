@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Scrollbar styling ──────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* ─── File item hover — show delete button ───────────────────────────── */
+.file-item:hover {
+  background-color: #2a2d2e !important;
+}
+
+.file-item:hover .delete-file-btn {
+  opacity: 1 !important;
+}
+
+/* ─── Sandpack overrides ─────────────────────────────────────────────── */
+.sp-wrapper {
+  height: 100% !important;
+}
+
+.sp-layout {
+  height: 100% !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.sp-editor {
+  height: 100% !important;
+}
+
+.sp-preview {
+  height: 100% !important;
+}
+
+.sp-preview-container {
+  height: 100% !important;
+}
+
+/* ─── Input focus styles ─────────────────────────────────────────────── */
+input:focus {
+  border-color: #007acc !important;
+  outline: none;
+}
+
+/* ─── Button hover states ────────────────────────────────────────────── */
+button:hover {
+  opacity: 0.85;
+}
+
+/* ─── Force Sandpack to fill full height and split evenly ────────────── */
+.sp-stack {
+  height: 100% !important;
+}
+
+.sp-editor, .sp-preview {
+  height: 100% !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.sp-preview-container,
+.sp-preview-iframe {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.sp-layout {
+  height: 100% !important;
+  flex: 1 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.sp-wrapper {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
